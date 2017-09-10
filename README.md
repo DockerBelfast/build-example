@@ -11,6 +11,8 @@ Run these commands in your first instance:
 git clone https://github.com/dockerbelfast/build-example.git
 cd build-example
 ls
+
+docker image ls
 ```
 
 Step 1 Build:
@@ -21,12 +23,22 @@ Step 2 Ship:
 ```
 docker login -u belfast -p <password>
 docker tag hello-belfast-image belfast/hello-belfast-image:<your own initials>
+docker image ls
+
 docker push belfast/hello-belfast-image:<your own initials>
 ```
+
+Go to [Docker Hub](https://hub.docker.com/r/belfast/hello-belfast-image/). View the Tags.
 
 Run in these commands in your second instance:
 
 Step 3 Run:
 ```
-docker container run my-hello-belfast belfast/hello-belfast-image:<your own initials> 
+docker image ls
+docker container ls -a
+
+docker container run --name my-hello-belfast belfast/hello-belfast-image:<your own initials> 
+
+docker image ls
+docker container ls -a
 ```
