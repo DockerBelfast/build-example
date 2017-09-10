@@ -29,11 +29,12 @@ Dockerfile should have the following text:
 
   CMD ["java", "HelloBelfast"]
 
-Step 1 Build:
+
+*Step 1 Build:
 ```
 docker build -t hello-belfast-image .
 ```
-Step 2 Ship:
+*Step 2 Ship:
 ```
 docker login -u belfast -p <password>
 docker tag hello-belfast-image belfast/hello-belfast-image:<your own initials>
@@ -46,7 +47,7 @@ Go to [Docker Hub](https://hub.docker.com/r/belfast/hello-belfast-image/). View 
 
 Run in these commands in your second instance:
 
-Step 3 Run:
+*Step 3 Run:
 ```
 docker image ls
 docker container ls -a
