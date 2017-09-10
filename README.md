@@ -1,4 +1,4 @@
-Example Docker Build 
+Docker build-example 
 =========
 
 Getting started
@@ -24,7 +24,7 @@ docker tag hello-belfast-image belfast/hello-belfast-image:<your own initials>
 docker push belfast/hello-belfast-image:<your own initials>
 ```
 
-Run in these commands in your first instance:
+Run in these commands in your second instance:
 
 Step 3 Run:
 ```
